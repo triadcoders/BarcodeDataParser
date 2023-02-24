@@ -1,0 +1,51 @@
+﻿@page "/"
+
+<h2>Input Numbers To Sum</h2>
+
+
+<textarea   name="Text1" @bind="@Values" @bind:event="oninput" @onkeydown="@ClickMe" cols="40" rows="20"></textarea>
+
+
+<button @onclick="ClickMe">Add numbers</button>
+
+<h1>@Values</h1>
+<h1>@Total</h1>
+
+
+@code{
+
+    private string? Values { get; set; }
+    private string[]? Numbers { get; set; }
+    private List<int> Numbers2 { get; set; } = new();
+
+    private int Total { get; set; } = 0;
+
+    private void ClickMe()
+    {
+        Numbers2.Clear();
+
+
+        if (Values != null && Values.Count() > 0)
+        {
+
+            string[] Numbers = Values.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            int outnum;
+            foreach (var num in Numbers)
+            {
+                bool result = int.TryParse(num, out outnum);
+
+                if (!result) continue;
+
+                Numbers2.Add(Int32.Parse(num));
+            }
+
+            Total = Numbers2.Sum();
+
+
+            this.StateHasChanged();
+        }
+    }
+
+  
+
+}

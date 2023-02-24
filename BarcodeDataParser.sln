@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeDataParser.Server", "BarcodeDataParser\Server\BarcodeDataParser.Server.csproj", "{EF33BF2F-E719-415D-AB31-85CBBD2BA4D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeDataParser.Client", "BarcodeDataParser\Client\BarcodeDataParser.Client.csproj", "{062D31DE-3359-4B22-BFB9-C252E7854EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeDataParser.Shared", "BarcodeDataParser\Shared\BarcodeDataParser.Shared.csproj", "{4ED48442-C09F-40B1-99A4-BC5A0AC516E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF33BF2F-E719-415D-AB31-85CBBD2BA4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF33BF2F-E719-415D-AB31-85CBBD2BA4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF33BF2F-E719-415D-AB31-85CBBD2BA4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF33BF2F-E719-415D-AB31-85CBBD2BA4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062D31DE-3359-4B22-BFB9-C252E7854EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062D31DE-3359-4B22-BFB9-C252E7854EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062D31DE-3359-4B22-BFB9-C252E7854EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062D31DE-3359-4B22-BFB9-C252E7854EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED48442-C09F-40B1-99A4-BC5A0AC516E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED48442-C09F-40B1-99A4-BC5A0AC516E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED48442-C09F-40B1-99A4-BC5A0AC516E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED48442-C09F-40B1-99A4-BC5A0AC516E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D0CB8ED-F045-4EBE-B2DC-386FDD50C3E3}
+	EndGlobalSection
+EndGlobal
